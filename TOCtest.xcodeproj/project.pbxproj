@@ -83,7 +83,7 @@
 			children = (
 				405E349921776DAD00D53452 /* clubbing.mov */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		E7EBD5E7CBF1327270D2C2C9 /* Pods */ = {

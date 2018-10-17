@@ -23,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             $0.clientKey = DataAccess.clientKey
             $0.server = DataAccess.serverUrl
         }
+        
         Parse.initialize(with: configuration)
         
         return true
