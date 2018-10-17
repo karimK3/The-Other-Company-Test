@@ -1,0 +1,30 @@
+PODS:
+  - Bolts/Tasks (1.9.0)
+  - CollectionViewSlantedLayout (3.1.1)
+  - Parse (1.17.1):
+    - Parse/Core (= 1.17.1)
+  - Parse/Core (1.17.1):
+    - Bolts/Tasks (~> 1.9)
+  - SSSpinnerButton (1.1.0)
+
+DEPENDENCIES:
+  - CollectionViewSlantedLayout (~> 3.1)
+  - Parse
+  - SSSpinnerButton
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Bolts
+    - CollectionViewSlantedLayout
+    - Parse
+    - SSSpinnerButton
+
+SPEC CHECKSUMS:
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  CollectionViewSlantedLayout: 24397455acd2461960bc45d394e0ef99c17d03ce
+  Parse: d3edaf8c7c722cb33cb83ba7821d015ae32d362d
+  SSSpinnerButton: 6b8215a5e927d16f149f08929e314e4ec25926b2
+
+PODFILE CHECKSUM: aa6f72e4388d23a9c78748bf14c1593f41ad4673
+
+COCOAPODS: 1.6.0.beta.1

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T6q-sR-erc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="azx-31-QU7">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="T6q-sR-erc" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="N4i-Hv-FIx">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Wai-6L-rLJ" kind="relationship" relationship="rootViewController" id="eyU-Mv-WET"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1CY-f9-ePR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-955.625" y="-609.19333333333327"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="2Jl-sF-tZ4">
+            <objects>
+                <viewController id="Wai-6L-rLJ" customClass="MainViewController" customModule="TOCtest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="APE-D0-6QN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rdv-nR-fad">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="677"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rdv-nR-fad" firstAttribute="centerX" secondItem="BQh-uZ-md8" secondAttribute="centerX" id="GEx-3f-A55"/>
+                            <constraint firstItem="Rdv-nR-fad" firstAttribute="centerY" secondItem="BQh-uZ-md8" secondAttribute="centerY" constant="-5" id="l0B-hA-9wH"/>
+                            <constraint firstItem="Rdv-nR-fad" firstAttribute="height" secondItem="APE-D0-6QN" secondAttribute="height" constant="10" id="nF2-4O-afQ"/>
+                            <constraint firstItem="Rdv-nR-fad" firstAttribute="width" secondItem="APE-D0-6QN" secondAttribute="width" id="xTs-N6-Xea"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BQh-uZ-md8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dFc-W1-GB1"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="splashImage" destination="Rdv-nR-fad" id="zgL-gb-lU2"/>
+                        <segue destination="vXZ-lx-hvc" kind="push" identifier="gotoHomeView" id="KVx-3m-2FP"/>
+                        <segue destination="aRm-IZ-xdk" kind="push" identifier="gotoLoginView" id="LOU-yg-YVN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lFD-Nh-SzI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-509.5" y="-612.5"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="Ube-Ni-9Lj">
+            <objects>
+                <viewController id="aRm-IZ-xdk" customClass="LoginViewController" customModule="TOCtest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4cn-MO-Y6U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="c8b-JR-WxA"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PTP-NJ-8Hb"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="push" identifier="gotoHomeView" id="6Aa-fa-nVt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M8n-ff-rav" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="379" y="-1097"/>
+        </scene>
+        <!--Sample-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="HomeViewController" customModule="TOCtest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="clg-ma-frh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <collectionViewLayout key="collectionViewLayout" id="mTM-Vp-4z9" customClass="CollectionViewSlantedLayout" customModule="CollectionViewSlantedLayout"/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="customViewCell" reuseIdentifier="customViewCell" id="UyI-V1-0fG" customClass="CustomCollectionCell" customModule="TOCtest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="275"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="275"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZcI-YN-HFO" userLabel="BackgroundView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="275"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lbl-pu-jLC">
+                                                            <rect key="frame" x="-1" y="0.0" width="375" height="275"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GF0-yp-CAt">
+                                                    <rect key="frame" x="-24" y="240" width="174" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNd-sx-2z7">
+                                                    <rect key="frame" x="197" y="215" width="122" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OqY-gy-AWx">
+                                                    <rect key="frame" x="195" y="240" width="129" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C10-ba-h9m">
+                                                    <rect key="frame" x="-20" y="210" width="184" height="29"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="25"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <size key="customSize" width="375" height="275"/>
+                                        <connections>
+                                            <outlet property="backgroundView" destination="ZcI-YN-HFO" id="8vZ-an-58U"/>
+                                            <outlet property="cityLabel" destination="UNd-sx-2z7" id="WF1-UJ-18T"/>
+                                            <outlet property="dateLabel" destination="OqY-gy-AWx" id="dbR-9R-Jj2"/>
+                                            <outlet property="imageView" destination="Lbl-pu-jLC" id="2XC-uh-7vl"/>
+                                            <outlet property="locationNameLabel" destination="GF0-yp-CAt" id="qzs-hp-bU2"/>
+                                            <outlet property="nameLabel" destination="C10-ba-h9m" id="45A-kk-8GW"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="XWz-dc-Xwe"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="pWp-mU-Rb4"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="U45-nA-xbc"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sample" id="baF-4c-KLW">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="PKT-sQ-hna"/>
+                    </navigationItem>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="clg-ma-frh" id="aqu-gn-PT8"/>
+                        <outlet property="collectionViewLayout" destination="mTM-Vp-4z9" id="fxv-ud-8bC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="378.5" y="-114.5"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="KVx-3m-2FP"/>
+    </inferredMetricsTieBreakers>
+</document>
